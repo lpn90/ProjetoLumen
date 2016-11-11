@@ -21,7 +21,7 @@ $app->get('/{letra}', [
     'uses' => 'AgendaController@index'
 ]);
 
-$app->post('search', [
+$app->post('search/?{nome}', [
     'as' => 'agenda.search',
     'uses' => 'AgendaController@search'
 ]);

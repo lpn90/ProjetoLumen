@@ -27,11 +27,8 @@ class AgendaController extends Controller
         return view('index',compact('pessoas'));
     }
     
-    public function search(Request $request)
+    public function search($nome)
     {
-        $pessoas = [];
-        $nome = "";
-        $nome = $request->nome;
         if($nome != ""){
             $pessoas = Pessoa::where('apelido', 'like', '%'.$nome.'%' )
                 ->orWhere('nome', 'like', '%'.$nome.'%' )

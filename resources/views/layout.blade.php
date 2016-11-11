@@ -33,7 +33,7 @@
                 Code.Education<br>
                 <small><a href="{{ route('agenda.index') }}"> <i class="glyphicon glyphicon-phone-alt"></i> Agenda Telefônica</a></small>
                 <span class="pull-right">
-                    <form class="form-inline" action="{{ route('agenda.search') }}" method="post">
+                    <form class="form-inline" action="{{ route('agenda.search') }}" method="get">
                         <div class="input-group">
                             <input type="text" name="nome" id="nome" class="form-control" placeholder="Pesquisar Contato...">
                                 <span class="input-group-btn">
